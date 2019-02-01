@@ -1,5 +1,31 @@
 /* CSS Document */
 
+
+#home-top {
+	padding-top: 15px; 
+}
+
+#menu-principal-full ul {
+	width: 440px;
+	margin: 0 auto;
+}
+#menu-principal-full a{
+	 background-color: #f7f7f7;
+	color: #669900;
+	padding: 10px;
+	margin: 5px;
+	
+}
+
+#banner-principal img {
+	max-width: 100%;
+	width: 100%;
+	max-height: auto;
+}
+
+#banner-principal div {
+	padding: 0;
+}
 .logoJMN {
 	width: 100px;
 	height: 100px;
@@ -8,3 +34,27 @@
 	text-indent: 100%;
     overflow: hidden;
 }
+
+.redes-sociais ul{
+	list-style: none;
+}
+
+.redes-sociais ul li {
+	float: left;
+	padding: 10px;
+	margin-top: 25px;
+}
+
+.redes-sociais img{
+	width: 20px;
+	height: 20px;
+}
+
+.buscar-content {
+	padding: 30px 65px;
+}
+
+
+
+
+
