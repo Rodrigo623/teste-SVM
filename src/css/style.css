@@ -1,0 +1,10 @@
+/* CSS Document */
+
+.logoJMN {
+	width: 100px;
+	height: 100px;
+	background-image:url(../img/logoJMN.jpg);
+	white-space: nowrap; /*retira o texto e deixa só a imagem*/
+	text-indent: 100%;
+    overflow: hidden;
+}
