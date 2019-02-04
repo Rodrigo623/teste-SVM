@@ -1,60 +1,341 @@
 /* CSS Document */
 
+a:hover{
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
 
+/*inicio*/
 #home-top {
 	padding-top: 15px; 
 }
 
-#menu-principal-full ul {
-	width: 440px;
-	margin: 0 auto;
-}
-#menu-principal-full a{
-	 background-color: #f7f7f7;
-	color: #669900;
-	padding: 10px;
-	margin: 5px;
-	
-}
 
+/*banner-principal*/
+@media (min-width: 850px) {
+	#banner-principal {
+		background-image: url(../img/bannerPrincipal.jpg);
+		height: 620px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	#home-content {
+	height: 500px;
+	margin-top: -350px;
+	padding-top: 10px;
+	}
+}
 #banner-principal img {
 	max-width: 100%;
 	width: 100%;
 	max-height: auto;
 }
-
 #banner-principal div {
 	padding: 0;
 }
-.logoJMN {
+
+
+/*menu mobile*/
+#menu-mobile {
+	background: #fff;
+	position: fixed;
+	z-index: 500;
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+#menu-mobile ul{
+	margin: 100px auto 0;
+}
+#menu-mobile ul li a{
+	color: #7f7f7f;
+}
+#menu-mobile ul li a:hover{
+	color: #23b6a4;
+}
+
+/*menu-principal-full*/
+#menu-principal-full ul {
+	width: 440px;
+	margin: -40px auto 20px;
+}
+#menu-principal-full a{
+	color: #7F7F7F;
+	padding: 10px;
+	margin: 5px;
+}
+#menu-principal-full a:hover{
+	color: #6461BC;
+}
+
+
+/*noticia-principal*/
+#noticia-principal{
+	padding: 25px 100px;
+	background-color: #00000080;
+}
+#noticia-principal img{
 	width: 100px;
-	height: 100px;
+	border-radius: 50%;
+	margin: 50px auto 0;
+}
+#noticia-principal p{
+	color: #fff;
+	padding: 5px;
+}
+#noticia-principal h4 a{
+	color: #fff;
+	text-decoration: none;
+}
+#noticia-principal h6 a{
+	margin: 20px 0;
+	color: #d2691e;
+	text-decoration: none;
+}
+
+
+/*historia-de-hoje*/
+#historia-de-hoje p a{
+	color: #881616;
+}
+#historia-de-hoje p a:hover {
+	color: #681010;
+}
+#historia-de-hoje h6 a{
+	color: #369;
+}
+#historia-de-hoje h6 a:hover{
+	color: #224B73;
+}
+
+
+/*historia-popular*/
+#historia-popular .card-body{
+    min-height: 160px;
+}
+#historia-popular p a{
+	color: #b8860b;
+}
+#historia-popular p a:hover{
+	color: #8A6407;
+}
+
+
+/*historia-popular-2*/
+#historia-popular-2 .card{
+	    min-height: 660px;
+}
+#historia-popular-2 p a{
+	color: #b8860b;
+}
+#historia-popular-2 p a:hover{
+	color: #8A6407;
+}
+
+
+/*noticia filme*/
+#noticia-filme{
+	background-image: url(../img/bannerFilme.jpg);
+	background-size: cover;
+	margin: 50px auto 0;
+	padding: 50px;
+}
+#noticia-filme img{
+	width: 100px;
+	border-radius: 50%;
+}
+#noticia-filme h5 a{
+	color: #fff;
+}
+#noticia-filme p{
+	color: #fff;
+	padding: 5px;
+}
+
+
+/*historia-popular*/
+#historia-instagram .card-body{
+    min-height: 160px;
+}
+#historia-instagram p a{
+	color: #b8860b;
+}
+#historia-instagram p a:hover{
+	color: #8A6407;
+}
+
+
+/*menu-rodape*/
+#menu-rodape ul {
+	width: 570px;
+	margin: -40px auto 20px;
+}
+#menu-rodape a{
+	color: #7F7F7F;
+	padding: 10px;
+	margin: 5px;
+}
+#menu-rodape a:hover{
+	color: #6461BC;
+}
+
+
+/*classes*/
+.card {
+	margin-top: 7px;
+}
+.card .perfil{
+	margin: 50px auto 0;
+	width: 200px;
+	border-radius: 50%;
+}
+.card img {
+	width: 100%
+}
+
+
+.logoJMN {
+	width: 150px;
 	background-image:url(../img/logoJMN.jpg);
 	white-space: nowrap; /*retira o texto e deixa só a imagem*/
 	text-indent: 100%;
     overflow: hidden;
 }
 
+
+/*redes sociais*/
 .redes-sociais ul{
 	list-style: none;
 }
-
 .redes-sociais ul li {
 	float: left;
 	padding: 10px;
 	margin-top: 25px;
 }
-
 .redes-sociais img{
 	width: 20px;
 	height: 20px;
 }
 
+
 .buscar-content {
-	padding: 30px 65px;
+	padding: 10px 65px 0;
+}
+
+
+/*categorias*/
+.comidas a{
+	color: brown;
+}
+.viagens a{
+	color: #369;
+}
+.filmes a{
+	color: #ff4a4a;
+}
+.noticias a{
+	color: darkgoldenrod;
+}
+.festas{
+	color: #d2691e;
+}
+
+
+/*linha divisao*/
+.linha{
+	margin: 70px 0 30px;
+	color: #4d4d4d;
+}
+.linha h6{
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+
+/*instagram javaScript*/
+.card-capiton {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	z-index: 10000;
 }
 
 
 
 
 
+
+
+/***********index2***********/
+/*dados video*/
+#dados img{
+	margin-left: 20px;
+	width: 100px;
+	border-radius: 50%;
+}
+#dados h5{
+	font-size: 16px;
+	color: #7F7F7F;
+}
+#dados h6{
+	font-size: 14px;
+	color: #7F7F7F;
+}
+#dados .viagens{
+	margin-top: 10px;
+	padding: 5px;
+	background-color: #efefef;
+}
+.video h3{
+	margin: 20px 0 20px 20px;
+}
+
+
+#categorias .viagens h5{
+	color: #7f7f7f;
+	margin-top: 10px;
+	padding: 5px;
+	background-color: #efefef;
+}
+.circulo{
+	border-radius: 50%;
+}
+
+#perfil h3 a{
+	color: #7f7f7f;
+}
+#perfil p{
+	color: #212529;
+}
+#perfil2 h3 a{
+	color: #7f7f7f;
+}
+#perfil2 p{
+	color: #212529;
+}
+
+#posts-recentes h5{
+	font-size: 16px;
+	color: #7F7F7F;
+}
+#posts-recentes h6{
+	font-size: 16px;
+	color: #7F7F7F;
+}
+
+#posts-recentes2 h5{
+	font-size: 16px;
+	color: #7F7F7F;
+}
+#posts-recentes2 h6{
+	font-size: 16px;
+	color: #7F7F7F;
+}
+
+#tags h6{
+	color: #7f7f7f;
+}
+/********************/

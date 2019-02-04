@@ -3,59 +3,380 @@
 <head>
 <meta charset="utf-8">
 <title>Jornal da Meia Noite</title>
-	<link href="lib/Hover-master/css/hover.css" rel="stylesheet" type="text/css" />
-	<link href="lib/bootstrap-4.1.3/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="lib/Hover-master/css/hover.min.css" rel="stylesheet" type="text/css" /><!--styleMenu-->
+	<link href="lib/bootstrap-4.1.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="src/css/menu-mobile.css" rel="stylesheet" type="text/css" />
 	<link href="src/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+	<div id="nav-icon3" class="d-block d-sm-block d-md-none">
+  		<span></span>
+  		<span></span>
+  		<span></span>
+  		<span></span>
+	</div>
+	<div class="text-center" id="menu-mobile">
+		<ul>
+			<li class="nav-item">
+				<a class="nav-link hvr-grow" href="">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link hvr-grow" href="">FASHION</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link hvr-grow" href="">LIFESTYLE</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link hvr-grow" href="">TRAVEL</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link hvr-grow" href="">FOOD</a>
+			</li>
+		</ul>
+	</div>
+	
+	<!--inicio-->
 	<div class="container-fluid" id="home-top">
 		<div class="row">
-			<div class="col-md-3 text-center"><!--logo-->
-				<img src="src/img/logoJMN.jpg" class="logoJMN" title="Jornal da Meia Noite" />
+			<!--logo-->
+			<div class="col-md-3 text-center">
+				<img src="src/img/logoJMN.jpg" class="logoJMN" title="Jornal da Meia Noite">
 			</div>
-			<div class="col-md-6 buscar-content"><!--buscador-->
+			<!--buscador-->
+			<div class="col-md-6 buscar-content d-md-block d-none d-lg-block d-sm-none">
 				<input type="text" placeholder="Buscar" class="form-control" />
-			</div><!--busca-->
-			<div class="col-md-3 redes-sociais"><!--redes sociais-->
+			</div>
+			<!--redes sociais-->
+			<div class="col-md-3 redes-sociais d-md-block d-none d-lg-block d-sm-none">
 				<ul>
 					<li><a href=""><img src="src/img/instagram.png"/></a></li>
 					<li><a href=""><img src="src/img/twitter.png"/></a></li>
 				</ul>
-			</div><!--redes-->
-		</div>
-		<div class="row text-center" id="menu-principal-full">
-			<ul class="nav">
-				<li class="nav-item">
-					<a class="nav-link button hvr-grow" href="">HOME</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link  button hvr-grow" href="">FASHION</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link  button hvr-grow" href="">LIFESTYLE</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link  button hvr-grow" href="">TRAVEL</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link  button hvr-grow" href="">FOOD</a>
-				</li>
-			</ul>
-		</div>
-		<div class="row" id="banner-principal">
-			<div class="col-md-12">
-				<img class="img-fluid" src="src/img/bannerPrincipal.jpg"/>
 			</div>
 		</div>
 		
-	
-	
-	
-	
+		<!--menu-->
+		<div class="row text-center d-md-block d-none d-lg-block d-sm-none" id="menu-principal-full">
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link hvr-grow" href="">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hvr-grow" href="">FASHION</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hvr-grow" href="">LIFESTYLE</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hvr-grow" href="">TRAVEL</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hvr-grow" href="">FOOD</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row" id="banner-principal"></div>
 	</div>
 	
+	<div class="container" id="home-content">
+		<!--noticia Principal-->
+		<div class="row" id="noticia-principal">
+			<!--logo Notícia Principal-->
+			<div class="col-md-2">
+				<img src="src/img/champagne.jpg"/>
+			</div>
+			<div class="col-md-10">
+				<!--categoria-->
+				<h6><a href="">Festas</a></h6>
+				<h4><a href="">Reveillon: A festa de reveillon foi marcada por grandes celebridades, incluindo a cantora Cláudia Leitte, Marília Mendonça e Léo Santana </a></h4>
+				<p>Flora Morris | 01 FEV 2018</p>
+			</div>
+		</div>
+		
+		<!--noticias do banner-->
+		<div class="row">
+			<div class=" col-lg-3 col-md-6 col-sm-12">
+				<div class="card">
+					<img class="card-img-top" src="src/img/banda-eva.jpg">
+					<div class="card-body">
+						<h5 class="card-title">Banda EVA</h5>
+						<p class="card-text">Também tocou no Reveillon de fotaleza, onde a música "minha pequena eva" foi a mais aclamada</p>
+					</div>
+					<div class="card-footer">
+						<a href="#" class="btn btn-primary">Veja Mais</a>
+					</div>
+				</div>
+			</div>
+			<div class=" col-lg-3 col-md-6 col-sm-12">
+				<div class="card">
+					<img class="card-img-top" src="src/img/ivete-sangalo.jpg">
+					<div class="card-body">
+						<h5 class="card-title">Ivete Sangalo</h5>
+						<p class="card-text">Ivete Sangalo filma marido, dando comida às gêmeas em vídeo nesta sexta-feira, dia 11 de fevereiro</p>
+					</div>
+					<div class="card-footer">
+						<a href="#" class="btn btn-primary">Veja Mais</a>
+					</div>
+				</div>
+			</div>
+			<div class=" col-lg-3 col-md-6 col-sm-12">
+				<div class="card">
+					<img class="card-img-top" src="src/img/reveillon.jpg">
+					<div class="card-body">
+						<h5 class="card-title">Reveillon de Fortaleza</h5>
+						<p class="card-text">A programação da festa começa a partir das 17h. Cláudia Leitte e Léo Santana estão entre as atrações.</p>
+					</div>
+					<div class="card-footer">
+						<a href="#" class="btn btn-primary">Veja Mais</a>
+					</div>
+				</div>
+			</div>
+			<div class=" col-lg-3 col-md-6 col-sm-12">
+				<div class="card">
+					<img class="card-img-top" src="src/img/prefeito.jpg">
+					<div class="card-body">
+						<h5 class="card-title">Jericoacoara</h5>
+						<p class="card-text">Jericoacoara é o principal ponto turístico do município de Jijoca de Jericoacoara</p>
+					</div>
+					<div class="card-footer">
+						<a href="#" class="btn btn-primary">Veja Mais</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--linha de divisao-->
+		<div class="row text-center linha">
+			<div class="col-md-3">
+				<h6>A HISTÓRIA DE HOJE</h6>
+			</div>
+			<div class="col-md-6">
+				<hr>
+			</div>
+			<div class="col-md-3">
+				<h6><a href="">VER TODOS</a></h6>
+			</div>
+		</div>
+		
+		<div class="row" id="historia-de-hoje">
+			<!--video historia de hoje-->
+			<div class="col-sm-12 col-md-12 col-lg-8">
+				<div class="card">
+					<iframe width="100%" height="283" src="https://www.youtube.com/embed/wSmv4bDIMmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="card-body">
+						<h5 class="card-title viagens"><a href="index2.html">Viagem</a></h5>
+						<h6><a class="" href="index2.html">Lagoa do paraíso, uma das melhores opções para passar o ano novo com bastante sombra e água fresca</a></h6>
+						<p class="card-text">Flora Morris | 01 FEV 2018</p>
+					</div>
+				</div>
+			</div>
+			
+			<!--box right-->
+			<div class="col-sm-12 d-md-none d-none d-lg-block d-sm-block d-block col-md-12 col-lg-4">
+				<div class="card">
+					<img class="card-img-top" src="src/img/comida.jpg">
+					<div class="card-body">
+						<h5 class="card-title comidas"><a href="">Comida</a></h5>
+						<p class="card-text"><a href="">Estudos apontam que um dos alimentos mais prejudiciais a saúde é o hambúguer</a></p>
+						<p class="card-text">Flora Morris | 01 FEV 2018</p>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title comidas"><a href="">Comida</a></h5>
+						<p class="card-text"><a href="">Cake Boss distribui bolo gigante de graça no aniversário de São Paulo</a></p>
+						<p class="card-text">Flora Morris | 01 FEV 2018</p>
+					</div>
+				</div>
+			</div>
+			
+			<!--box right responsivo-->
+			<div class="d-lg-none d-sm-none d-none d-md-block col-sm-4 col-md-6 col-lg-4">
+				<a href=""><img class="rounded" src="src/img/comida.jpg"/></a>
+			</div>
+			<div class="d-lg-none d-sm-none d-none d-md-block col-sm-4 col-md-6 col-lg-4">
+				<div class="card text-white rounded-0 bg-success mb-3" >
+				  	<div class="card-body">
+						<p class="card-text"><a href="">Estudos apontam que um dos alimentos mais prejudiciais a saúde é o hambúguer</a></p>
+						<p class="card-text">Floral /morris | 01 FEV 2018</p>
+					</div>
+				</div>
+				<div class="card text-white rounded-0 bg-success mb-3" >
+				  	<div class="card-body">
+						<p class="card-text"><a href="">Cake Boss distribui bolo gigante de graça no aniversário de São Paulo</a></p>
+						<p class="card-text">Floral Morris | 01 FEV 2018</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--linha de divisao-->
+		<div class="row text-center linha">
+			<div class="col-md-3">
+				<h6>HISTÓRIA POPULAR</h6>
+			</div>
+			<div class="col-md-6">
+				<hr>
+			</div>
+			<div class="col-md-3">
+				<h6><a href="">VER TODOS</a></h6>
+			</div>
+		</div>
+		
+		<!--historia popular-->
+		<div class="row" id="historia-popular">
+			<div class="col-md-4">
+				<div class="card">
+				  	<img class="card-img-top" src="src/img/maia-bolsonaro.png">
+				  	<div class="card-body">
+					  	<h6 class="noticias"><a href="">Notícia</a></h6>
+						<p class="card-text"><a href="">Bolsonaro não tem votos suficientes para Reforma da Previdência, diz Maia</a></p>
+					</div>
+					<div class="card-footer"><p class="card-text">Floral Morris | 01 FEV 2018</p></div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+				  	<img class="card-img-top" src="src/img/amorim-mourao.png">
+				  	<div class="card-body">
+					  	<h6 class="noticias"><a href="">Notícia</a></h6>
+						<p class="card-text"><a href="">Amorim: ao negar invadir Venezuela, Mourão acaba sendo o mais sensato</a></p>
+					</div>
+					<div class="card-footer"><p class="card-text">Floral Morris | 01 FEV 2018</p></div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+				  	<img class="card-img-top" src="src/img/silas-caetano.png">
+				  	<div class="card-body">
+					  	<h6 class="noticias"><a href="">Notícia</a></h6>
+						<p class="card-text"><a href="">Caetano acusa Malafaia de propagar fake news e diz que é preciso ser mais ‘humano’</a></p>
+			  	  	</div>
+				  	<div class="card-footer"><p class="card-text">Floral Morris | 01 FEV 2018</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--linha de divisao-->
+		<div class="row text-center linha">
+			<div class="col-md-3">
+				<h6>HISTÓRIA POPULAR</h6>
+			</div>
+			<div class="col-md-6">
+				<hr>
+			</div>
+			<div class="col-md-3">
+				<h6><a href="">VER TODOS</a></h6>
+			</div>
+		</div>
+		
+		<!--historia popular 2-->
+		<div class="row" id="historia-popular-2">
+			<div class="col-sm-12 col-md-12 col-lg-8">
+				<div class="card">
+					<a href=""><img src="src/img/capitao-nascimento.jpg" /></a>
+					<div class="card-body">
+						<h5 class="card-title noticias"><a href="">Notícia</a></h5>
+						<p class="card-text"><a href="">Wagner Moura: ‘Eu não votaria no Capitão Nascimento para presidente’</a></p>
+					</div>
+					<div class="card-footer"><p class="card-text">Floral Morris | 01 FEV 2018</p></div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12 col-md-12 col-lg-4">
+				<div class="card">
+					<a href=""><img src="src/img/anitta.jpg" /></a>
+					<div class="card-body">
+						<h5 class="card-title noticias"><a href="">Notícia</a></h5>
+						<p class="card-text"><a href="">Anitta encerra briga de anos com ex-empresária e paga R$ 9 milhões</a></p>
+					</div>
+					<div class="card-footer"><p class="card-text">Floral Morris | 01 FEV 2018</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--noticia filme-->
+		<div class="row" id="noticia-filme">
+			<!--logo Notícia Principal-->
+			<div class="col-md-2">
+				<img src="src/img/perfil-penetra.jpg"/>
+			</div>
+			<div class="col-md-10">
+				<!--categoria-->
+				<h6 class="filmes"><a href="">Filmes</a></h6>
+				<h5><a href="">Dirigido por Andrucha Waddington, o filme narra o encontro do inocente e apaixonado Beto com o picareta Marco Polo às vésperas do Reveillón no Rio de Janeiro</a></h5>
+				<p class="card-text">Flora Morris | 01 FEV 2018</p>
+			</div>
+		</div>
+		
+		<!--linha de divisao-->
+		<div class="row linha">
+			<div class="col-md-2">
+				<h6>FOLLOW @Instagram</h6>
+			</div>
+			<div class="col-md-10">
+				<hr>
+			</div>
+		</div>
+		
+		<!--historia instagram-->
+		<div class="row" id="historia-instagram">
+			<div class="col-md-3">
+				<div class="card">
+					<a href="">
+						<img class="card-capiton" src="src/img/instagramHover.png">
+				  		<img src="src/img/teatro.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<a href="">
+						<img class="card-capiton" src="src/img/instagramHover.png">
+				  		<img src="src/img/escritorio.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<a href="">
+						<img class="card-capiton" src="src/img/instagramHover.png">
+				  		<img src="src/img/futebol.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<a href="">
+						<img class="card-capiton" src="src/img/instagramHover.png">
+				  		<img src="src/img/amizade.jpg">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--linha de divisao-->
+		<div class="row linha">
+			<div class="col-md-12">
+				<hr>
+			</div>
+		</div>
+		
+		<!--menu rodape-->
+		<div class="row text-center d-md-block d-none d-lg-block d-sm-none" id="menu-rodape">
+			<ul class="nav">
+				<li class="nav-item"><a class="nav-link hvr-grow" href="">HELP</a></li>
+				<li class="nav-item"><a class="nav-link hvr-grow" href="">STATUS</a></li>
+				<li class="nav-item"><a class="nav-link hvr-grow" href="">BLOG</a></li>
+				<li class="nav-item"><a class="nav-link hvr-grow" href="">CAREERS</a></li>
+				<li class="nav-item"><a class="nav-link hvr-grow" href="">PRIVACY</a></li>
+				<li class="nav-item"><a class="nav-link hvr-grow" href="">TERMS</a></li>
+				<li class="nav-item"><a class="nav-link hvr-grow" href="">ABOUT</a></li>
+			</ul>
+		</div>
+	</div>
 	
 	<script src="lib/jquery/jquery-3.3.1.js"></script>
 	<script src="lib/bootstrap-4.1.3/dist/js/bootstrap.js" type="application/javascript"></script>
+	<script src="src/js/script.js"></script>
+	<script src="src/js/menu-mobile.js"></script>
 </body>
 </html>
